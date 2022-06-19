@@ -19,9 +19,8 @@ public final class Indispensable extends JavaPlugin {
         this.getCommand("setspawn").setExecutor(new SetspawnCommand());
         this.getCommand("god").setExecutor(new GodCommand());
         this.getCommand("tpa").setExecutor(new TpaCommand());
+        this.getCommand("tpaccept").setExecutor(new TpacceptCommand());
         this.getServer().getPluginManager().registerEvents(new PlayerJoinEventListener(),this);
-
-
     }
 
     @Override
