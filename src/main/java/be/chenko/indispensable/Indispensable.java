@@ -1,6 +1,7 @@
 package be.chenko.indispensable;
 
 import be.chenko.indispensable.commands.HomeCommand;
+import be.chenko.indispensable.commands.SetHomeCommand;
 import be.chenko.indispensable.commands.SetspawnCommand;
 import be.chenko.indispensable.commands.SpawnCommand;
 import be.chenko.indispensable.listeners.PlayerJoinEventListener;
@@ -16,6 +17,7 @@ public final class Indispensable extends JavaPlugin {
         // Plugin startup logic
         LOGGER.info("Starting up");
         this.getCommand("home").setExecutor(new HomeCommand());
+        this.getCommand("sethome").setExecutor(new SetHomeCommand());
         this.getCommand("spawn").setExecutor(new SpawnCommand());
         this.getCommand("setspawn").setExecutor(new SetspawnCommand());
         this.getServer().getPluginManager().registerEvents(new PlayerJoinEventListener(),this);
