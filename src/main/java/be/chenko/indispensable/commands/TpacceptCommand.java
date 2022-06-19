@@ -32,6 +32,7 @@ public class TpacceptCommand implements CommandExecutor {
                 ChatColor.LIGHT_PURPLE + "tpa request.");
 
         // removing the request from the MAP
+        //No clue if this works without testing on players
         util.removeTPA(originalReqSender);
 
 
