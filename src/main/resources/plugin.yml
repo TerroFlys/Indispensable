@@ -18,3 +18,7 @@ commands:
     description: Set the world spawn
     usage: /<command>
     permission: indispensable.command.setspawn
+  sethome:
+    description: Set home location
+    usage: /<command>
+    permission: indispensable.command.sethome
