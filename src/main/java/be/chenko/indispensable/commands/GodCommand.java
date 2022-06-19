@@ -1,5 +1,6 @@
 package be.chenko.indispensable.commands;
 
+import be.chenko.indispensable.util;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -13,7 +14,7 @@ public class GodCommand implements CommandExecutor {
         System.out.println("amount of arguments"+args.length);
         //check if sender/receiver is not a player
         if (!(sender instanceof Player) && args.length == 0) {
-            sender.sendMessage("this command is only for players");
+            util.sendOnlyPlayerMessage(sender);
             return true;
         }
         //init player var

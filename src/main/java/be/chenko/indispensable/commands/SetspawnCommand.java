@@ -1,5 +1,6 @@
 package be.chenko.indispensable.commands;
 
+import be.chenko.indispensable.util;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -10,7 +11,7 @@ public class SetspawnCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!(sender instanceof Player)) {
-            sender.sendMessage("You must be a player in order to use this command");
+            util.sendOnlyPlayerMessage(sender);
             return true;
         }
         Player player = (Player) sender;

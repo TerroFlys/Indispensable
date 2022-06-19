@@ -1,6 +1,7 @@
 package be.chenko.indispensable.commands;
 
 import be.chenko.indispensable.data.UserDataHandler;
+import be.chenko.indispensable.util;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -11,7 +12,7 @@ public class SetHomeCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!(sender instanceof Player)){
-            sender.sendMessage("You must be a player to use this command!");
+            util.sendOnlyPlayerMessage(sender);
             return true;
         }
         //TODO allow players to have multiple homes, default home should be called 'home'

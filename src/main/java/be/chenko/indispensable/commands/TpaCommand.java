@@ -1,5 +1,6 @@
 package be.chenko.indispensable.commands;
 
+import be.chenko.indispensable.util;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -10,7 +11,7 @@ public class TpaCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!(sender instanceof Player)){
-            sender.sendMessage(ChatColor.RED + "This command is only for players");
+            util.sendOnlyPlayerMessage(sender);
             return true;
         }
         Player player = (Player) sender;
