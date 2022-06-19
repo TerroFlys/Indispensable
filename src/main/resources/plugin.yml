@@ -1,0 +1,20 @@
+name: Indispensable
+version: '${project.version}'
+main: be.chenko.indispensable.Indispensable
+api-version: 1.19
+authors: [ TerroFlys, Lexdarco ]
+description: An indispensable plugin for MC spigot servers
+website: www.chenko.be
+commands:
+  home:
+    description: Test command to see if the plugin works
+    usage: /<command>
+    permission: indispensable.command.home
+  spawn:
+    description: Go to the world spawn
+    usage: /<command>
+    permission: indispensable.command.spawn
+  setspawn:
+    description: Set the world spawn
+    usage: /<command>
+    permission: indispensable.command.setspawn
