@@ -42,4 +42,11 @@ commands:
     permission: indispensable.command.tpdeny
     aliases:
       - tpno
-
+  voteday:
+    description: Vote for the time to be day!
+    usage: /<command>
+    permission: indispensable.command.voteday
+  votenight:
+    description: Vote for the time to be night!
+    usage: /<command>
+    permission: indispensable.command.votenight
