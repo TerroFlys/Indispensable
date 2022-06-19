@@ -26,3 +26,20 @@ commands:
     description: You will become invincible!
     usage: /<command> <player>
     permission: indispensable.command.god
+  tpa:
+    description: Ask to be teleported to another player!
+    usage: /<command> <player>
+    permission: indispensable.command.tpa
+  tpaccept:
+    description: Confirm the teleport !
+    usage: /<command>
+    permission: indispensable.command.tpaccept
+    aliases:
+      - tpyes
+  tpdeny:
+    description: Deny the teleport !
+    usage: /<command>
+    permission: indispensable.command.tpdeny
+    aliases:
+      - tpno
+
