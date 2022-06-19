@@ -22,3 +22,7 @@ commands:
     description: Set home location
     usage: /<command>
     permission: indispensable.command.sethome
+  god:
+    description: You will become invincible!
+    usage: /<command> <player>
+    permission: indispensable.command.god
