@@ -5,6 +5,9 @@
 *.ipr
 *.iws
 
+
+# in order to avoid pushing personal changes in the pom file
+pom.xml
 # IntelliJ
 out/
 
