@@ -47,7 +47,6 @@ public class UserDataHandler implements Listener {
             LOGGER.error("Something went wrong ,trying to set the home location in the config");
             throw new RuntimeException(e);
         }
-        System.out.println("End");
 
 
 
