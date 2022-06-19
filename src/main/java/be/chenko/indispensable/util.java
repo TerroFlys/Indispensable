@@ -14,14 +14,16 @@ public class util {
         sender.sendMessage(ChatColor.RED + "This command is only for players!");
     }
     public static boolean playerinTpaMap(Player player){
-        if (tpaFromTo.containsKey(player.getUniqueId())) return true;
+        if (tpaFromTo.containsValue(player.getUniqueId())) return true;
         return false;
     }
 
     public static UUID getReceivingTPAPlayer(Player player){
         UUID uid = null;
-        for (UUID uuid: tpaFromTo.values()) {
-            if (uuid.equals(player.getUniqueId())) uid = uuid;
+        for (Map.Entry<UUID, UUID> pair : tpaFromTo.entrySet()) {
+            if (pair.getValue().equals(player.getUniqueId())){
+                uid = pair.getKey();
+            }
         }
         return uid;
     }
