@@ -48,4 +48,6 @@ Current contributers:
 ## TODO
 * heal
   * Remove only bad effects
+* fly
+* Gamemode but shorter (gm)
 * tba
