@@ -25,8 +25,7 @@ public class GodCommand implements CommandExecutor {
             player = Bukkit.getServer().getPlayerExact(args[0]);
         }
         if (player == null){
-            if (sender instanceof Player) sender.sendMessage(ChatColor.RED + "Cannot find specified user");
-            else sender.sendMessage("Cannot find specified user");
+            sender.sendMessage(ChatColor.RED + "Cannot find specified user");
             return true;
         }
 
