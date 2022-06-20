@@ -18,7 +18,7 @@ public class HealCommand implements CommandExecutor {
             return true;
         }
         Player player = null;
-        ////check if user wants to make himself or someone else god
+        ////check if user wants to heal himself or others
         if (args.length == 0) player = (Player) sender;
         else{
             player = Bukkit.getServer().getPlayerExact(args[0]);
