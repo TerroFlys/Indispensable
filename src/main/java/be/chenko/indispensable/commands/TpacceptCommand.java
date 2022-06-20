@@ -22,8 +22,6 @@ public class TpacceptCommand implements CommandExecutor {
         }
 
         Player originalReqSender = Bukkit.getPlayer(util.getReceivingTPAPlayer(player));
-        System.out.println("player: " + player);
-        System.out.println("OG: " + originalReqSender);
 
         originalReqSender.sendMessage(ChatColor.AQUA + player.getDisplayName() + ChatColor.LIGHT_PURPLE + " has accepted your TPA request!");
         //tp player
