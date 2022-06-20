@@ -43,11 +43,12 @@ Current contributers:
   * sunny or rainy
 * feed
   * yourself or others
+* fly
 
 
 ## TODO
 * heal
   * Remove only bad effects
-* fly
+* warps
 * Gamemode but shorter (gm)
 * tba
