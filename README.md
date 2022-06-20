@@ -24,11 +24,13 @@ Current contributers:
 * Home (Max one)
 * Spawn
 * God
+* tpa
+  * teleport request
+  * accept
 
 
 ## TODO
 * tpa
-  * accept
   * deny
 * feed
 * vote day/night
