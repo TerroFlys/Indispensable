@@ -31,11 +31,16 @@ Current contributers:
 * heal
   * Without effects
   * With effects (curently ALL effects)
+* vote time
+  * day
+  * night
 
 
 ## TODO
 * heal
   * Remove only bad effects
 * feed
-* vote day/night
+* weather
+  * sun
+  * rain
 * tba
