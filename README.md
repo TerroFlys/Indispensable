@@ -21,26 +21,30 @@ Current contributers:
 
 
 ## Current features
-* Home (Max one)
+* Home (Max one for now)
+  * Set home
+  * TP home
 * Spawn
+  * Set spawn
+  * TP spawn
 * God
+  * enable/disable
+  * give to other player
 * tpa
   * teleport request
-  * accept
-  * deny
+  * accept/deny
 * heal
   * Without effects
   * With effects (curently ALL effects)
+  * heal other players
 * vote time
-  * day
-  * night
+  * day or night
+* weather
+  * sunny or rainy
 
 
 ## TODO
 * heal
   * Remove only bad effects
 * feed
-* weather
-  * sun
-  * rain
 * tba
