@@ -7,7 +7,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class WeatherSunCommand implements CommandExecutor {
+public class WeatherRainCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         // sender can be a player or console
@@ -18,8 +18,8 @@ public class WeatherSunCommand implements CommandExecutor {
             return true;
         }
         Player player = (Player) sender;
-        player.sendMessage(ChatColor.LIGHT_PURPLE + "Weather set to sun!");
-        player.getWorld().setClearWeatherDuration(24000);
+        player.sendMessage(ChatColor.LIGHT_PURPLE + "Weather set to rain :(");
+        player.getWorld().setClearWeatherDuration(0);
         return true;
     }
 }

@@ -27,6 +27,7 @@ public final class Indispensable extends JavaPlugin {
         this.getCommand("voteday").setExecutor(new VoteDayCommand());
         this.getCommand("votenight").setExecutor(new VoteNightCommand());
         this.getCommand("sun").setExecutor(new WeatherSunCommand());
+        this.getCommand("rain").setExecutor(new WeatherRainCommand());
         this.getServer().getPluginManager().registerEvents(new PlayerJoinEventListener(),this);
         this.getServer().getPluginManager().registerEvents(new TickListener(),this);
     }
