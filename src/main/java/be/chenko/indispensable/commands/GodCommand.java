@@ -11,7 +11,6 @@ import org.bukkit.entity.Player;
 public class GodCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        System.out.println("amount of arguments"+args.length);
         //check if sender/receiver is not a player
         if (!(sender instanceof Player) && args.length == 0) {
             util.sendOnlyPlayerMessage(sender);
