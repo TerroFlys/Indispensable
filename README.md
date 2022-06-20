@@ -41,10 +41,11 @@ Current contributers:
   * day or night
 * weather
   * sunny or rainy
+* feed
+  * yourself or others
 
 
 ## TODO
 * heal
   * Remove only bad effects
-* feed
 * tba
