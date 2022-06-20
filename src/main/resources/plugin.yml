@@ -62,3 +62,11 @@ commands:
     description: Vote for the time to be night!
     usage: /<command>
     permission: indispensable.command.votenight
+  sun:
+    description: Shorter version of /weather clear
+    usage: /<command>
+    permission: indispensable.command.sun
+  rain:
+    description: Shorter version of /weather rain
+    usage: /<command>
+    permission: indispensable.command.rain
