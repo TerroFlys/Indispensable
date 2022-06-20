@@ -28,10 +28,14 @@ Current contributers:
   * teleport request
   * accept
   * deny
+* heal
+  * Without effects
+  * With effects (curently ALL effects)
 
 
 ## TODO
 * heal
+  * Remove only bad effects
 * feed
 * vote day/night
 * tba
