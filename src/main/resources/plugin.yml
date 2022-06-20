@@ -42,6 +42,14 @@ commands:
     permission: indispensable.command.tpdeny
     aliases:
       - tpno
+  heal:
+    description: Heal yourself or someone else!
+    usage: /<command> <player>
+    permission: indispensable.command.heal
+  healeffect:
+    description: Heal yourself or someone else, this also removes any active status effects!
+    usage: /<command> <player>
+    permission: indispensable.command.healeffect
   voteday:
     description: Vote for the time to be day!
     usage: /<command>
