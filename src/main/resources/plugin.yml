@@ -78,3 +78,7 @@ commands:
     description: Allow flight!
     usage: /<command> <player>
     permission: indispensable.command.fly
+  gm:
+    description: Eadily change your gamemode!
+    usage: /<command> [0|1|2|3|survival|creative|adventure|spectator]
+    permission: indispensable.command.gm
