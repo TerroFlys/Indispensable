@@ -50,6 +50,10 @@ commands:
     description: Heal yourself or someone else, this also removes any active status effects!
     usage: /<command> <player>
     permission: indispensable.command.healeffect
+    aliases:
+      - heale
+      - healeff
+      - healeffects
   voteday:
     description: Vote for the time to be day!
     usage: /<command>

@@ -22,6 +22,7 @@ public final class Indispensable extends JavaPlugin {
         this.getCommand("tpaccept").setExecutor(new TpacceptCommand());
         this.getCommand("tpdeny").setExecutor(new TpdenyCommand());
         this.getCommand("heal").setExecutor(new HealCommand());
+        this.getCommand("healeffect").setExecutor(new HealEffectCommand());
         this.getServer().getPluginManager().registerEvents(new PlayerJoinEventListener(),this);
     }
 
