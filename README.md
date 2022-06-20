@@ -27,11 +27,11 @@ Current contributers:
 * tpa
   * teleport request
   * accept
+  * deny
 
 
 ## TODO
-* tpa
-  * deny
+* heal
 * feed
 * vote day/night
 * tba
