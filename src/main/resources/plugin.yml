@@ -70,3 +70,7 @@ commands:
     description: Shorter version of /weather rain
     usage: /<command>
     permission: indispensable.command.rain
+  feed:
+    description: fill your hungerbar!
+    usage: /<command>
+    permission: indispensable.command.feed
