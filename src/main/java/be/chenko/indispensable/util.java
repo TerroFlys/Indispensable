@@ -12,15 +12,32 @@ import java.util.UUID;
 public class util {
     public static HashMap<UUID, UUID> tpaFromTo = new HashMap<>();
     public static ArrayList<UUID> dayVoters = new ArrayList<>();
+    public static ArrayList<UUID> nightVoters = new ArrayList<>();
+
+    public static boolean uuidInArrayNight(UUID uuid){
+        return nightVoters.contains(uuid);
+    }
+    public static int amountNightVoters(){
+        return nightVoters.size();
+    }
+
+    public static void addPlayerToVoteNight(UUID uuid){
+        nightVoters.add(uuid);
+    }
+    public static void cleanNightVoters(){
+        nightVoters.clear();
+    }
 
     public static boolean uuidInArrayDay(UUID uuid){
         return dayVoters.contains(uuid);
+    }
+    public static int amountDayVoters(){
+        return dayVoters.size();
     }
 
     public static void addPlayerToVoteDay(UUID uuid){
         dayVoters.add(uuid);
     }
-
     public static void cleanDayVoters(){
         dayVoters.clear();
     }

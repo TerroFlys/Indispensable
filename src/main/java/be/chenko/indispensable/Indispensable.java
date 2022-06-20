@@ -2,6 +2,7 @@ package be.chenko.indispensable;
 
 import be.chenko.indispensable.commands.*;
 import be.chenko.indispensable.listeners.PlayerJoinEventListener;
+import be.chenko.indispensable.listeners.TickListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -24,7 +25,9 @@ public final class Indispensable extends JavaPlugin {
         this.getCommand("heal").setExecutor(new HealCommand());
         this.getCommand("healeffect").setExecutor(new HealEffectCommand());
         this.getCommand("voteday").setExecutor(new VoteDayCommand());
+        this.getCommand("votenight").setExecutor(new VoteNightCommand());
         this.getServer().getPluginManager().registerEvents(new PlayerJoinEventListener(),this);
+        this.getServer().getPluginManager().registerEvents(new TickListener(),this);
     }
 
     @Override
