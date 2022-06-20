@@ -12,7 +12,7 @@ public final class Indispensable extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        LOGGER.info("Starting up");
+        LOGGER.info(String.format("[%s] " + "Starting up", PLUGIN_ID));
         this.getCommand("home").setExecutor(new HomeCommand());
         this.getCommand("sethome").setExecutor(new SetHomeCommand());
         this.getCommand("spawn").setExecutor(new SpawnCommand());
