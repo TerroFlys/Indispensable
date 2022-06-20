@@ -31,6 +31,9 @@ public class HealCommand implements CommandExecutor {
 
         //heal
         player.setHealth(player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue());
+        //Also feed the player
+        player.setFoodLevel(20);
+
         if (args.length > 0) sender.sendMessage(ChatColor.LIGHT_PURPLE + "You have healed " + ChatColor.AQUA + player.getDisplayName());
         player.sendMessage(ChatColor.LIGHT_PURPLE + "You have been healed!");
 
