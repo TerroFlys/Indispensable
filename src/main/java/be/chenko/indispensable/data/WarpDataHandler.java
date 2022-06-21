@@ -10,7 +10,6 @@ import org.bukkit.event.Listener;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 import static be.chenko.indispensable.Indispensable.LOGGER;
 
@@ -26,9 +25,10 @@ public class WarpDataHandler implements Listener {
     // check if warp exists
     public Boolean warpExists(String warpName) {
         if (!(warpFile.exists())) return false;
-        return warpConfig.get("warps."+warpName) != null;
+        return warpConfig.get("warps." + warpName) != null;
     }
-    public void removeWarp(String warpName){
+
+    public void removeWarp(String warpName) {
         YamlConfiguration UserConfig = YamlConfiguration.loadConfiguration(warpFile);
         //setting it to null removes it all
         UserConfig.set("warps." + warpName, null);
@@ -40,6 +40,7 @@ public class WarpDataHandler implements Listener {
             throw new RuntimeException(e);
         }
     }
+
     //no clue if I should use this or createWarp
     public void setWarp(Warp warp) {
 
@@ -61,13 +62,13 @@ public class WarpDataHandler implements Listener {
 
     public Location getWarpLocation(String warpName) {
         YamlConfiguration warpConfig = YamlConfiguration.loadConfiguration(warpFile);
-        Location warpLocation = (Location) warpConfig.get("warps."+warpName + ".location");
+        Location warpLocation = (Location) warpConfig.get("warps." + warpName + ".location");
         return warpLocation;
     }
-    public ArrayList<String> getWarpList(){
+
+    public ArrayList<String> getWarpList() {
         YamlConfiguration warpConfig = YamlConfiguration.loadConfiguration(warpFile);
         ArrayList<String> list = new ArrayList<>();
-
         return list;
     }
 
@@ -76,9 +77,7 @@ public class WarpDataHandler implements Listener {
 
         try {
             YamlConfiguration UserConfig = YamlConfiguration.loadConfiguration(warpFile);
-
             UserConfig.set("warps." + warp.getName() + ".location", warp.getLocation());
-
             UserConfig.save(warpFile);
 
         } catch (Exception e) {
