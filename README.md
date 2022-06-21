@@ -44,11 +44,12 @@ Current contributers:
 * feed
   * yourself or others
 * fly
+  * yourself or others
+* Gamemode but shorter (gm)
 
 
 ## TODO
 * heal
   * Remove only bad effects
 * warps
-* Gamemode but shorter (gm)
-* tba
+* TBD
