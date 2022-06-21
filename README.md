@@ -46,10 +46,14 @@ Current contributers:
 * fly
   * yourself or others
 * Gamemode but shorter (gm)
+* warps
+  * set/del
+  * teleport
 
 
 ## TODO
 * heal
   * Remove only bad effects
 * warps
+  * list 
 * TBD
