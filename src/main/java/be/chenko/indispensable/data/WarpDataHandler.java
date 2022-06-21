@@ -38,7 +38,7 @@ public class WarpDataHandler implements Listener {
             throw new RuntimeException(e);
         }
     }
-
+    //no clue if I should use this or createWarp
     public void setWarp(Warp warp) {
 
         // just to be sure if that the file exists
@@ -59,9 +59,10 @@ public class WarpDataHandler implements Listener {
 
     public Location getWarpLocation(String warpName) {
         YamlConfiguration warpConfig = YamlConfiguration.loadConfiguration(warpFile);
-        Location warpLocation = (Location) warpConfig.get("warps."+warpName);
+        Location warpLocation = (Location) warpConfig.get("warps."+warpName + ".location");
         return warpLocation;
     }
+
 
     public void createWarp(final Warp warp) {
 
