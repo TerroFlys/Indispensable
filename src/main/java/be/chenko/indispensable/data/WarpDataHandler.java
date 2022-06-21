@@ -26,6 +26,18 @@ public class WarpDataHandler implements Listener {
         if (!(warpFile.exists())) return false;
         return warpConfig.get("warps."+warpName) != null;
     }
+    public void removeWarp(String warpName){
+        YamlConfiguration UserConfig = YamlConfiguration.loadConfiguration(warpFile);
+        //setting it to null removes it all
+        UserConfig.set("warps." + warpName, null);
+        try {
+            UserConfig.save(warpFile);
+        } catch (IOException e) {
+            // error message to specify what/where it happend
+            LOGGER.error("Something went wrong, trying to set the warp location in the config");
+            throw new RuntimeException(e);
+        }
+    }
 
     public void setWarp(Warp warp) {
 
@@ -38,7 +50,7 @@ public class WarpDataHandler implements Listener {
             UserConfig.save(warpFile);
         } catch (IOException e) {
             // error message to specify what/where it happend
-            LOGGER.error("Something went wrong ,trying to set the home location in the config");
+            LOGGER.error("Something went wrong, trying to set the warp location in the config");
             throw new RuntimeException(e);
         }
 
