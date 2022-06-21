@@ -64,6 +64,8 @@ Current contributers:
   * spawn kit
   * cooldown (store kit data in player)
   * per kit permissions
+* vote weather
+  * sunny or rainy
 * per subcommand permissions (like warp, multiple homes, kits, etc)
 * refactoring code
 * TBD
