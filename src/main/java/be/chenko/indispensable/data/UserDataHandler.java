@@ -22,10 +22,13 @@ public class UserDataHandler implements Listener {
     UUID u;
     File userFile;
     FileConfiguration userConfig;
+    String dataFolderstr = Bukkit.getServer().getPluginManager().getPlugin("Indispensable").getDataFolder().toString();
+    File dataFolder = new File(dataFolderstr + "/users/");
 
     public UserDataHandler(UUID uuid) {
+
         this.u = uuid;
-        userFile = new File(Bukkit.getServer().getPluginManager().getPlugin("Indispensable").getDataFolder(), uuid + ".yml");
+        userFile = new File(dataFolder, uuid + ".yml");
         userConfig = YamlConfiguration.loadConfiguration(userFile);
     }
     // check if user has home
