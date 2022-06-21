@@ -68,4 +68,8 @@ Current contributers:
   * sunny or rainy
 * per subcommand permissions (like warp, multiple homes, kits, etc)
 * refactoring code
+* up
+  * go x blocks up and place a placeholder blocks
+* top
+  * go to the highest block  
 * TBD
