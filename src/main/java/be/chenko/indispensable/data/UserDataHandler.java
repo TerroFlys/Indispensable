@@ -18,7 +18,6 @@ import java.util.UUID;
 import static be.chenko.indispensable.Indispensable.LOGGER;
 
 public class UserDataHandler implements Listener {
-    Indispensable p;
     UUID u;
     File userFile;
     FileConfiguration userConfig;
@@ -84,21 +83,21 @@ public class UserDataHandler implements Listener {
             }
         }
     }
-    public FileConfiguration getUserFile(){
-
-        return userConfig;
-
-    }
-    public void saveUserFile() {
-
-        try {
-
-            getUserFile().save(userFile);
-
-        } catch (Exception e) {
-
-            e.printStackTrace();
-
-        }
-    }
+//    public FileConfiguration getUserFile(){
+//
+//        return userConfig;
+//
+//    }
+//    public void saveUserFile() {
+//
+//        try {
+//
+//            getUserFile().save(userFile);
+//
+//        } catch (Exception e) {
+//
+//            e.printStackTrace();
+//
+//        }
+//    }
 }
