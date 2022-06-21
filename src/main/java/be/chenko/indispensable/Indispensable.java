@@ -32,6 +32,8 @@ public final class Indispensable extends JavaPlugin {
         this.getCommand("fly").setExecutor(new FlyCommand());
         this.getCommand("gm").setExecutor(new GameModeCommand());
         this.getCommand("warp").setExecutor(new WarpCommand());
+        this.getCommand("setwarp").setExecutor(new SetWarpCommand());
+        this.getCommand("delwarp").setExecutor(new DelWarpCommand());
         this.getServer().getPluginManager().registerEvents(new PlayerJoinEventListener(),this);
         this.getServer().getPluginManager().registerEvents(new TickListener(),this);
     }
