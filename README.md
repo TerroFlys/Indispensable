@@ -56,4 +56,14 @@ Current contributers:
   * Remove only bad effects
 * warps
   * list 
+* change time (short command)
+  * day/night 
+* other tp options (tp to chunks, near players, worlds, etc)
+* kits
+  * create/remove kit
+  * spawn kit
+  * cooldown (store kit data in player)
+  * per kit permissions
+* per subcommand permissions (like warp, multiple homes, kits, etc)
+* refactoring code
 * TBD
