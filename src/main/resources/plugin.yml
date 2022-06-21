@@ -79,6 +79,18 @@ commands:
     usage: /<command> <player>
     permission: indispensable.command.fly
   gm:
-    description: Eadily change your gamemode!
+    description: Easily change your gamemode!
     usage: /<command> (0|1|2|3|survival|creative|adventure|spectator|s|a|c|spec) <player>
     permission: indispensable.command.gm
+  warp:
+    description: Teleport to preset locations!
+    usage: /<command> <warp>
+    permission: indispensable.command.warp
+  setwarp:
+    description: Set a warp location!
+    usage: /<command> <warp-name>
+    permission: indispensable.command.setwarp
+  delwarp:
+    description: Remove a warp!
+    usage: /<command> <warp>
+    permission: indispensable.command.delwarp
