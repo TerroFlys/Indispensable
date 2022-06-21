@@ -94,3 +94,9 @@ commands:
     description: Remove a warp!
     usage: /<command> <warp>
     permission: indispensable.command.delwarp
+  warplist:
+    description: Show all warps!
+    usage: /<command>
+    permission: indispensable.command.warplist
+    aliases:
+      - warps

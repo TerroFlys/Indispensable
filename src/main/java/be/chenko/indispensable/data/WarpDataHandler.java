@@ -9,6 +9,8 @@ import org.bukkit.event.Listener;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import static be.chenko.indispensable.Indispensable.LOGGER;
 
@@ -61,6 +63,12 @@ public class WarpDataHandler implements Listener {
         YamlConfiguration warpConfig = YamlConfiguration.loadConfiguration(warpFile);
         Location warpLocation = (Location) warpConfig.get("warps."+warpName + ".location");
         return warpLocation;
+    }
+    public ArrayList<String> getWarpList(){
+        YamlConfiguration warpConfig = YamlConfiguration.loadConfiguration(warpFile);
+        ArrayList<String> list = new ArrayList<>();
+
+        return list;
     }
 
 

@@ -34,6 +34,7 @@ public final class Indispensable extends JavaPlugin {
         this.getCommand("warp").setExecutor(new WarpCommand());
         this.getCommand("setwarp").setExecutor(new SetWarpCommand());
         this.getCommand("delwarp").setExecutor(new DelWarpCommand());
+        this.getCommand("warplist").setExecutor(new ListWarpsCommand());
         this.getServer().getPluginManager().registerEvents(new PlayerJoinEventListener(),this);
         this.getServer().getPluginManager().registerEvents(new TickListener(),this);
     }
