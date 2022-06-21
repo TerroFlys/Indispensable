@@ -30,6 +30,7 @@ public final class Indispensable extends JavaPlugin {
         this.getCommand("rain").setExecutor(new WeatherRainCommand());
         this.getCommand("feed").setExecutor(new FeedCommand());
         this.getCommand("fly").setExecutor(new FlyCommand());
+        this.getCommand("gm").setExecutor(new GameModeCommand());
         this.getServer().getPluginManager().registerEvents(new PlayerJoinEventListener(),this);
         this.getServer().getPluginManager().registerEvents(new TickListener(),this);
     }
