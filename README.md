@@ -1,5 +1,7 @@
 # INDISPENSABLE
 
+![idispensable](https://imgur.com/nq8jhh3.png)
+
 Indispensable is a plugin made for MCS
 
 > We're making this plugin in order to practice programming, and because its fun!
