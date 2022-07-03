@@ -74,4 +74,19 @@ Current contributers:
   * go x blocks up and place a placeholder blocks
 * top
   * go to the highest block  
+* inventory
+  * clear inventory
+  * check inventories of others
+  * block clear inventory on certain players
+  * disposal
+  * personal vaults
+* better give command
+* fun commands
+  * let bounce others, yourself or everyone in the air 
+  * troll command
+    * freeze
+    * set on fire
+    * suffucate
+    * drown
+    * ...
 * TBD
